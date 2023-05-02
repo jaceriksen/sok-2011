@@ -333,6 +333,6 @@ model1 <- lm(ln_gdppc  ~ avg_educ, data= df_growth2019)
 tab_model(model1)
 
 
-model2 <- lm(ln_gdppc  ~ avg_educ+ avg_p+ avg_nsy+ avg_nry+ avg_gi+ avg_n+ avg_gx+ ln_gdppc0,data= no_outliers)
+model2 <- lm(avg_gdpgrowth  ~ avg_educ+ avg_p+ avg_nsy+ avg_nry+ avg_gi+ avg_n+ avg_gx+ ln_gdppc0,data= no_outliers)
 tab_model(model2)
 
